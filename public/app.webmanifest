@@ -1,0 +1,35 @@
+{
+    "name": "Expense Manager, the best PWA in town",
+    "short_name": "EM",
+    "start_url": "./?utm_source=pwa",
+    "scope": "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },{
+            "src": "icons/icon-256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+                
+    ],
+    "description": "This app lets you add your daily expenses"
+}
