@@ -8,7 +8,7 @@ body{
   }
   h1{
     margin: 40px auto;
-    color: #ff0aa7;
+    color: #d9ba31;
     text-align: center;
   }
   ul{
@@ -21,7 +21,7 @@ body{
     margin: 10px auto;
   }
   li h4{
-    color: #ff0aa7;
+    color: #a98e16;
     margin: 0;
     text-transform: capitalize;
   }
@@ -59,7 +59,7 @@ body{
   #btn{
     color: white;
     border: 0;
-    background: #ff0aa7;
+    background: #bc7d3d;
     padding: 6px;
     margin: 10px 0;
     min-width: 80px;
@@ -92,7 +92,7 @@ justify-content: center;
   #clear{
     color: white;
     border: 0;
-    background: #ff0aa7;
+    background: #bc7d3d;
     padding: 6px;
     margin:auto;
     min-width: 80px;
