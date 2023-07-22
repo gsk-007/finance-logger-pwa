@@ -7,6 +7,14 @@ const assets = [
   "classes/*",
 ]
 
+self.addEventListener("install", (event: any) => {
+  event.waitUntil(
+    caches.open("assets").then((cache) => {
+      cache.addAll(assets)
+    })
+  )
+})
+
 self.addEventListener("fetch", (event: any) => {
   event.respondWith(
     caches.match(event.request).then((response: any) => {
