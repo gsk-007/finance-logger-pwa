@@ -1,4 +1,4 @@
 "use strict";
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.ts");
+    navigator.serviceWorker.register("sw.js");
 }

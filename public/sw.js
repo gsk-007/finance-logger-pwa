@@ -6,6 +6,7 @@ const assets = [
     "sw-register.js",
     "interfaces/*",
     "classes/*",
+    "icons/*",
 ];
 self.addEventListener("install", (event) => {
     event.waitUntil(caches.open("assets").then((cache) => {

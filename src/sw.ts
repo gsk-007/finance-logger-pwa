@@ -5,6 +5,7 @@ const assets = [
   "sw-register.js",
   "interfaces/*",
   "classes/*",
+  "icons/*",
 ]
 
 self.addEventListener("install", (event: any) => {
