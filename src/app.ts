@@ -16,7 +16,6 @@ const amount = document.querySelector("#amount") as HTMLInputElement
 const clearBtn = document.getElementById("clear") as HTMLButtonElement
 
 // list template instance
-
 const ul = document.querySelector("ul")!
 const list = new ListTemplate(ul)
 
@@ -40,24 +39,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 })
 
 form.addEventListener("submit", (e: Event) => {
+  // const value = type[type.options.selectedIndex].value
   e.preventDefault()
   let values: [string, string, number]
   values = [tofrom.value, details.value, amount.valueAsNumber]
+
   let doc: HasFormatter
-  if ((type.value = "invoice")) {
+  if (type.value === "invoice") {
     doc = new Invoice(...values)
   } else {
     doc = new Payment(...values)
   }
+
   invoices.push({ doc, type: type.value })
   save()
   list.render(doc, type.value, "end")
+  // resetting values
+  tofrom.value = ""
+  details.value = ""
+  amount.value = ""
 })
 
 const addUID = <T extends object>(obj: T) => {
   let uid = Math.floor(Math.random() * 100)
   return { ...obj, uid }
 }
+
 function renderExpenses() {
   invoices.forEach((i) => {
     list.render(i.doc, i.type, "end")

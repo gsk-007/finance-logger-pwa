@@ -32,11 +32,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     renderExpenses();
 });
 form.addEventListener("submit", (e) => {
+    // const value = type[type.options.selectedIndex].value
     e.preventDefault();
     let values;
     values = [tofrom.value, details.value, amount.valueAsNumber];
     let doc;
-    if ((type.value = "invoice")) {
+    if (type.value === "invoice") {
         doc = new Invoice(...values);
     }
     else {
@@ -45,6 +46,10 @@ form.addEventListener("submit", (e) => {
     invoices.push({ doc, type: type.value });
     save();
     list.render(doc, type.value, "end");
+    // resetting values
+    tofrom.value = "";
+    details.value = "";
+    amount.value = "";
 });
 const addUID = (obj) => {
     let uid = Math.floor(Math.random() * 100);
