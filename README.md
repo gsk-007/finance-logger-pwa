@@ -1,5 +1,5 @@
 # finance-logger-pwa
-[App Link](https://main--elegant-taffy-6e626b.netlify.app/)
+[App Link](https://main--finance-logger-pwa.netlify.app/)
 
 ### Installation Instructions
 - Go to a website you want to install.
